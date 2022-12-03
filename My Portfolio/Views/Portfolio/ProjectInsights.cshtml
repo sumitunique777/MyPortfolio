@@ -1,0 +1,49 @@
+﻿
+
+<style>
+    body{
+background:#f1f1f1;
+    }
+
+    .header-color{
+            color: #007bff;
+    font-size: 22px;
+    }
+
+   .pills-font-size
+   
+   {
+     font-size: 17px;
+    font-weight: 400;
+   }
+    .portfolio-wrap figure {
+        box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+    }
+
+</style>
+<div class="container">
+    @if(ViewBag.ProjectType=="doAndTrack")
+    {
+      @Html.Partial("~/Views/Portfolio/DoAndTrackPartial.cshtml")
+        
+    }
+    else if(ViewBag.ProjectType=="erp")
+    {
+      @Html.Partial("~/Views/Portfolio/ERP.cshtml")
+
+    }
+
+
+  </div>
+
+
+<script>
+
+    function showProjectSnaps()
+    {
+        //$("#exampleModal").modal("show");
+$('.carousel').carousel({
+  interval: 1000
+})      
+    }
+</script>

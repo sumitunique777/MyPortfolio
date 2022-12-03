@@ -1,0 +1,474 @@
+﻿<style>
+    
+       
+        .custom-card{
+    background: #fff;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 20%);
+}
+
+body{
+    background:white!important;
+}
+
+.custom-card >img
+{
+    height:80px;
+}
+
+.custom-card >svg
+{
+fill:gray;
+      font-weight:lighter;
+
+}
+.custom-card:hover
+{
+        box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 30%);
+
+}
+.header-text{
+     text-decoration:none;
+     color:black;
+}
+.header{
+    font-weight: 900;
+}
+.item {
+  flex: 0 0 50%;
+  padding: 10px;
+}
+
+.user-info{
+    font-weight: 600;
+}
+.custom-card > i{
+        color:gray;
+        height:70px;
+        width:70px;
+}
+.card-editable-fields:hover{
+    cursor:pointer!important;
+     text-decoration: underline;
+}
+.header-text{
+     font-size:25px;font-weight:600;
+}
+
+.header-text2{
+font-size:13px;min-width:150px;
+font-size:22px
+}
+
+.edit-field{
+font-size:22px;background:white;width:300px;
+}
+     .card {
+            background: #fff;
+            transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+            padding: 14px 0px 15px 15px;
+            cursor: pointer;
+            margin-top: 20px;
+            min-height:250px;
+
+        }
+
+
+            .card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+            }
+
+
+
+            .card img {
+                position: relative;
+                height: 60px;
+                border-radius: 50%;
+                width: 60px;
+            }
+
+
+       
+
+        .card-2 {
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 80px;
+            border-left: 3px solid;
+            margin-right: 40px;
+        }
+
+
+        .circle {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            text-align: center;
+            background: #43bac2;
+            word-wrap: normal;
+            border: 3px solid black;
+            margin-left: -23px;
+            margin-top: 60px;
+        }
+
+        .fontWeight {
+            font-size: 15px;
+            word-wrap: normal;
+            font-weight: bold;
+        }
+
+
+        .content {
+            padding: 0.5rem;
+            display: flex;
+      
+        }
+
+      
+        
+
+        .left,
+        .right {
+            border: 1px solid #fff;
+            margin-left: 10px;
+            flex-grow: 0;
+
+        }
+
+
+        .card h4 {
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: -10px;
+        }
+
+
+        .left2 .right2 {
+            margin-left: 20px;
+            border: 1px solid #fff;
+            margin-left: 10px;
+            flex-grow: 0;
+        }
+
+    
+      /*  .container
+        {
+            background-color:white;
+        }*/
+    
+        p{
+            font-size:13px !important;
+        }
+        .header-margin{
+            margin-left:25px;
+        }
+</style>
+
+<div style="right:0;position:fixed">
+    <a href="https://twitter.com/Sumit_____77" target="_blank">
+        <svg version="1.1" height="50" width="50" id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 248 204" style="enable-background:new 0 0 248 204;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1D9BF0;}
+</style>
+<g id="Logo_1_">
+	<path id="white_background" class="st0" d="M221.95,51.29c0.15,2.17,0.15,4.34,0.15,6.53c0,66.73-50.8,143.69-143.69,143.69v-0.04
+		C50.97,201.51,24.1,193.65,1,178.83c3.99,0.48,8,0.72,12.02,0.73c22.74,0.02,44.83-7.61,62.72-21.66
+		c-21.61-0.41-40.56-14.5-47.18-35.07c7.57,1.46,15.37,1.16,22.8-0.87C27.8,117.2,10.85,96.5,10.85,72.46c0-0.22,0-0.43,0-0.64
+		c7.02,3.91,14.88,6.08,22.92,6.32C11.58,63.31,4.74,33.79,18.14,10.71c25.64,31.55,63.47,50.73,104.08,52.76
+		c-4.07-17.54,1.49-35.92,14.61-48.25c20.34-19.12,52.33-18.14,71.45,2.19c11.31-2.23,22.15-6.38,32.07-12.26
+		c-3.77,11.69-11.66,21.62-22.2,27.93c10.01-1.18,19.79-3.86,29-7.95C240.37,35.29,231.83,44.14,221.95,51.29z"/>
+</g>
+</svg>
+
+
+</a>
+    <br/>
+       <br/>
+    <a href="https://www.linkedin.com/in/sumit-kumar-31b613184/" target="_blank">
+
+
+        <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" style="height:50px;width:50px;" />
+    </a><br/>
+       <br/>
+      <a href="mailto:st67603@gmail.com">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhSWJKDzHS7fTY7CV-1cYPz8G29oEJStFfO1ycvDQ&s" style="height:50px;width:50px;" />
+
+      </a>
+
+</div>
+<div class="row">
+     <div class="col-lg-1 col-md-1 col-sm-1">
+ 
+         
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4">
+
+        @*<img src="~/Images/WIN_20220916_23_22_28_Pro.jpg" style="filter:blur(2px)" />*@
+    </div>
+     <div class="col-sm-4 col-md-4 col-lg-4 custom-card set-card-margin justify-content-center" style=" margin-left:10px;max-width:350px">
+                <a href="/Portfolio/Projectinsights?projectType=doAndTrack" target="_blank">
+          </a>
+  
+                  
+                      
+                          
+              
+                </div>
+</div>
+<div class="row">
+     <div class="col-lg-1 col-md-1 col-sm-1">
+ 
+         
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9">
+
+<h5>
+    More About Me
+</h5>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nostrum dolor minus, libero delectus praesentium perferendis
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequuntur labore? Ea totam voluptas amet!    </div>
+    
+</div>
+<br/>
+<div class="row">
+
+    <div class="col-lg-2 col-md-2 col-sm-2">
+
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+
+
+<div class="skills" >
+    <h5>My Skills</h5>
+                 <div class="row">
+                 
+        
+            <div class="col-sm-4 col-md-4 col-lg-4 custom-card set-card-margin justify-content-center" style=" margin-left:10px;max-width:200px">
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/768px-Vue.js_Logo_2.svg.png?20170919082558" class="mx-auto d-block p-3 img-responsive" style="height:-webkit-fill-available;width:-webkit-fill-available  "/>
+          
+           <hr/>
+<div class="text-center">
+
+
+
+                                  <h5><span>Vue Js</span> </h5>
+                                   
+                            
+
+                        </div>
+                  
+                      
+                          
+              
+                </div>
+
+                    <div class="col-sm-4 col-md-4 col-lg-4 custom-card set-card-margin"  style="margin-left:10px;max-width:200px;">
+           <img src="https://miro.medium.com/max/1400/1*oc0z3w_7TKgE0oSyiqpnRw.png" class="mx-auto d-block p-3 rounded img-fluid" style="height:-webkit-fill-available;width:-webkit-fill-available;"/>
+    <hr/>
+<div class="text-center">
+
+
+
+                                  <h5><span>Dot Net/Dot Net Core</span> </h5>
+                                   
+                           
+
+                        </div>
+                  
+                      
+                          
+              
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-lg-4 custom-card set-card-margin"  style="margin-left:10px;max-width:200px;">
+           <img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" class="mx-auto d-block p-3 rounded img-fluid" style="height:-webkit-fill-available;width:-webkit-fill-available;"/>
+    <hr/>
+<div class="text-center">
+
+
+
+                                  <h5><span>Angular Js</span> </h5>
+                                   
+                           
+
+                        </div>
+                  
+                      
+                          
+              
+                </div>
+
+                
+                <div class="col-sm-4 col-md-4 col-lg-4 custom-card set-card-margin"  style="margin-left:10px;max-width:200px;">
+           <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png" class="mx-auto d-block p-3 rounded img-fluid" style="height:-webkit-fill-available;width:-webkit-fill-available;"/>
+    <hr/>
+<div class="text-center">
+
+
+
+                                  <h5><span>Angular Js</span> </h5>
+                                   
+                           
+
+                        </div>
+                  
+                      
+                          
+              
+                </div>
+                   
+                <div class="col-sm-4 col-md-4 col-lg-4 custom-card set-card-margin"  style="margin-left:10px;max-width:200px;">
+           <img src="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2019/07/image2-1.png?fit=600%2C315&ssl=1" class="mx-auto d-block p-3 rounded img-fluid" style="height:-webkit-fill-available;width:-webkit-fill-available;"/>
+    <hr/>
+<div class="text-center">
+
+
+
+                                  <h5><span>MSSQL</span> </h5>
+                                   
+                           
+
+                        </div>
+                  
+                      
+                          
+              
+                </div>
+
+                        <div class="col-sm-4 col-md-4 col-lg-4 custom-card set-card-margin"  style="margin-left:10px;max-width:200px;">
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" class="mx-auto d-block p-3 rounded img-fluid" style="height:-webkit-fill-available;width:-webkit-fill-available;"/>
+    <hr/>
+<div class="text-center">
+
+
+
+                                  <h5><span>MSSQL</span> </h5>
+                                   
+                           
+
+                        </div>
+                  
+                      
+                          
+              
+                </div>
+
+                  <div class="col-sm-4 col-md-4 col-lg-4 custom-card set-card-margin"  style="margin-left:10px;max-width:200px;">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz9KSClK4RrlH96Wh_ZYLOmrgomZIynmmKFkZVKlg7&s" class="mx-auto d-block p-3 rounded img-fluid" style="height:-webkit-fill-available;width:-webkit-fill-available;"/>
+    <hr/>
+<div class="text-center">
+
+
+
+                                  <h5><span>MSSQL</span> </h5>
+                                   
+                           
+
+                        </div>
+                  
+                      
+                          
+              
+                </div>
+
+                </div>
+                </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+
+ 
+   </div>  </div>
+                </div>
+    <h5 class="text-center">Some of my Recent Projects
+</h5>
+                 <div class="row">
+                 
+        
+            <div class="col-sm-4 col-md-4 col-lg-4 custom-card set-card-margin justify-content-center" style=" margin-left:10px;max-width:350px">
+                <a href="/Portfolio/Projectinsights?projectType=doAndTrack" target="_blank">
+           <img src="~/Images/DATImages/DoAndTrack.png" class="mx-auto d-block p-3 img-responsive" style="height:-webkit-fill-available;width:-webkit-fill-available  "/>
+          </a>
+           <hr/>
+<div class="text-center">
+
+
+
+                                  <h5><span>DO AND TRACK</span> </h5>
+                                   
+                            <span class="text-muted">
+
+                                WEB APPLICATION
+
+                            </span>
+
+                        </div>
+                  
+                      
+                          
+              
+                </div>
+
+                    <div class="col-sm-4 col-md-4 col-lg-4 custom-card set-card-margin"  style="margin-left:10px;max-width:350px;">
+          
+                <a href="/Portfolio/Projectinsights?projectType=erp" target="_blank">
+                        
+                        <img src="~/Images/ERP/Dashboard.png" class="mx-auto d-block p-3 rounded img-fluid" style="height:-webkit-fill-available;width:-webkit-fill-available;"/>
+   
+                        </a>
+                        <hr/>
+<div class="text-center">
+
+
+
+                                  <h5><span>NELSON INSULATION ERP</span> </h5>
+                                   
+                            <span class="text-muted">
+
+                                WEB APPLICATION
+
+                            </span>
+
+                        </div>
+                  
+                      
+                          
+              
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-lg-4 custom-card set-card-margin"  style="margin-left:10px;max-width:350px;">
+           <img src="~/Images/DoAndTrack.png" class="mx-auto d-block p-3 rounded img-fluid" style="height:-webkit-fill-available;width:-webkit-fill-available;"/>
+    <hr/>
+<div class="text-center">
+
+
+
+                                  <h5><span>NELSON INSULATION ERP</span> </h5>
+                                   
+                            <span class="text-muted">
+
+                                WEB APPLICATION
+
+                            </span>
+
+                        </div>
+                  
+                      
+                          
+              
+                </div>
+
+                </div>
+               
+                
+
+               
+   </section>
+           
+    

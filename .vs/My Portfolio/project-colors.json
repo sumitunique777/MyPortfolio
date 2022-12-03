@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8b528775-a22e-406e-a223-3d723ed18b14": {
+      "ProjectGuid": "8b528775-a22e-406e-a223-3d723ed18b14",
+      "DisplayName": "My Portfolio",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
