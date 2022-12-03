@@ -12,6 +12,9 @@ namespace My_Portfolio.Controllers
             return View();
         }
 
+
+
+
         public IActionResult ProjectInsights(string projectType)
         {
             ViewBag.ProjectType = projectType;
